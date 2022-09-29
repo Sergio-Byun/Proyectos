@@ -22,7 +22,8 @@ nav {
 }
 
 nav img {
-    width: 250px;
+    width: 80px;
+    padding: 5px;
 }
 
 .nav-links {
