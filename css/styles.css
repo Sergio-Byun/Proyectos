@@ -47,7 +47,7 @@ nav img {
 
 .nav-links ul li::after {
     content: "";
-    width: 0%;
+    width: 0;
     height: 2px;
     background: rgba(0, 0, 0, 0.7);
     display: block;
@@ -69,12 +69,13 @@ nav img {
 }
 
 .text-box h1 {
-    font-size: 62px;
+    font-size: 80px;
+    text-align: center;
 }
 
 .text-box p {
     margin: 10px 0 40px;
-    font-size: 14px;
+    font-size: 15px;
     color: white;
 }
 
