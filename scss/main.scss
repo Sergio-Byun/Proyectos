@@ -134,6 +134,22 @@ section {
         }
     }
 }
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 2.8rem;
+    font-size: 1.7rem;
+    color: $black;
+    border: $border;
+    background: $white;
+    cursor: pointer;
+    border-radius: .5rem;
+
+    &:hover {
+        background: $red;
+        color: $white;
+    }
+}
 
 #menu-btn {
     display: none;
