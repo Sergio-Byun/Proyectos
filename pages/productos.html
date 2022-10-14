@@ -1,110 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
-            rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-        <title>Dintex</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>productos</title>
+    <!-- font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
-    <body>
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="../css/style.css">
 
-        <section class="sub-headern">
-            <nav>
-                <a href="index.html"><img src="../Assets/Img/Dlogo.png"></a>
-                <div class="nav-links" id="navLinks">
-                    <i class="bi bi-x" onclick="hideMenu()"></i>
+    <!-- custom js file link -->
+    <script src="./js/script.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- header section starts -->
+
+    <header class="header">
+
+        <a href="index.html" class="logo">Dintex By Heim</a>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="#">Servicios +</a>
                     <ul>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="./nosotros.html">Nosotros</a></li>
-                        <li><a href="./productos.html">Productos</a></li>
-                        <li><a href="./servicios.html">Servicios</a></li>
-                        <li><a href="./contacto.html">Contacto</a></li>
+                        <li><a href="./maritima.html">Maritima</a></li>
+                        <li><a href="./aereo.html">Aereo</a></li>
                     </ul>
-                </div>
-                <i class="bi bi-three-dots-vertical" onclick="showMenu()"></i>
-            </nav>
-        <h1>Productos</h1>
+                </li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+        </nav>
+
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </div>
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- header section -->
+
+    <section class="heading">
+        <h1>productos</h1>
+        <p><a href="../index.html">Home</a> >> productos</p>
     </section>
 
+    <!-- header section -->
 
-    <!------------ productos ------------>
+    <!-- porducts section starts -->
 
     <section class="productos">
-        <h1>Traemos lo que necesites</h1>
-        <p>Enfocamos en el area textil, podemos cotizarte lo que necesites</p>
+        <h1 class="title"> nuestros productos</h1>
 
-        <div class="row">
-            <div class="option-art">
-                <h3>Telas</h3>
-                <img src="../Assets/Img/textil.jpg" alt="">
-                <p>Punto - Plano</p>
+        <div class="box-container">
+
+            <div class="box">
+                <div class="image">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <img src="../assets/img/modalsoft.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>MODAL SOFT</h3>
+                    <div class="price"> $3500 <span>$3800</span></div>
+                </div>
             </div>
-            <div class="option-art">
-                <h3>Hilados</h3>
-                <img src="../Assets/Img/hilado.jpg" alt="">
-                <p>Bremer - Lycra - Y Mas</p>
+
+            <div class="box">
+                <div class="image">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <img src="../assets/img/bengalinalisa.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>BENGALINA LISA</h3>
+                    <div class="price"> $3500 <span>$3800</span></div>
+                </div>
             </div>
-            <div class="option-art">
-                <h3>Accesorios</h3>
-                <img src="../Assets/Img/accesorios.png" alt="">
-                <p>Bijouterie - Cierres - Botones - Etc</p>
+
+            <div class="box">
+                <div class="image">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <img src="../assets/img/fibranarayon.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>FIBRANA RAYON</h3>
+                    <div class="price"> $3500 <span>$3800</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <img src="../assets/img/lanillabremer.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>LANILLA BREMER</h3>
+                    <div class="price"> $3500 <span>$3800</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <img src="../assets/img/morleyviscosa.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>MORLEY VISCOSA</h3>
+                    <div class="price"> $3500 <span>$3800</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <img src="../assets/img/morlyelanilla.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>MORLEY LANILLA</h3>
+                    <div class="price"> $3500 <span>$3800</span></div>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- products section ends -->
 
 
 
 
-
-
-    <!---------------- Footer ---------------->
+    <!-- footer section stars -->
 
     <section class="footer">
-        <h4>About Us</h4>
-        <div id="copyright" align="center">&copy; 2022 - 2022 Sergio Byun</div>
-        <script>
-            (function () {
-                let cpr = document.getElementById("copyright");
-                cpr.innerHTML = "&copy; 2022 - " + new Date().getFullYear() + " Sergio Byun - All Rights Reserved.";
-            })();
-        </script>
-        <div class="icons">
-            <i class="bi bi-facebook"></i>
-            <i class="bi bi-instagram"></i>
-            <i class="bi bi-twitter"></i>
-        </div>
-        <p>Made By Sergio Byun</p>
+        <div class="box-container">
 
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="../index.html"><i class="fas fa-angle-right"></i>Home</a>
+                <a href="./productos.html"><i class="fas fa-angle-right"></i>Productos</a>
+                <a href="./maritima.html"><i class="fas fa-angle-right"></i>Maritima</a>
+                <a href="./aereo.html"><i class="fas fa-angle-right"></i>Aereo</a>
+                <a href="./nosotros.html"><i class="fas fa-angle-right"></i>Sobre Nosotros</a>
+                <a href="./contacto.html"><i class="fas fa-angle-right"></i>Contacto</a>
+            </div>
+
+
+            <div class="box">
+                <h3>Seguinos en</h3>
+                <a href="https://www.facebook.com/dintexheim"><i class="fab fa-facebook-f"></i>Facebook</a>
+                <a href="https://www.instagram.com/dintex_textil/"><i class="fab fa-instagram"></i>Instagram</a>
+                <a href="#"><i class="fab fa-twitter"></i>Twitter</a>
+            </div>
+
+            <div class="box">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.977979229538!2d-58.47765178374017!3d-34.629996766398186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc991f1f0a4f9%3A0x6ea95b4385c46b0a!2sCampana%20161%2C%20C1406%20AUA%2C%20Buenos%20Aires!5e0!3m2!1sko!2sar!4v1665588322321!5m2!1sko!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        <div class="credit"> created by <span>Sergio Byun</span> | all rights reserved</div>
     </section>
 
-
-
-
-
-    <!-- for Toggle Menu -->
-    <script>
-
-        var navLinks = document.getElementById("navLinks")
-
-        function showMenu() {
-            navLinks.style.right = "0";
-        }
-
-        function hideMenu() {
-            navLinks.style.right = "-200px";
-        }
-
-    </script>
-
+    <!-- footer section ends -->
 
 </body>
 

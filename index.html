@@ -5,196 +5,152 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <title>Dintex</title>
+    <title>Dintex by Heim empresa impo y expo</title>
+    <!-- font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- custom js file link -->
+    <script src="./js/script.js" defer></script>
+
 </head>
 
 <body>
 
-    <section class="header">
-        <nav>
-            <a href="index.html"><img src="./Assets/Img/Dlogo.png"></a>
-            <div class="nav-links" id="navLinks">
-                <i class="bi bi-x" onclick="hideMenu()"></i>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                    <li><a href="./pages/productos.html">Productos</a></li>
-                    <li><a href="./pages/servicios.html">Servicios</a></li>
-                    <li><a href="./pages/contacto.html">Contacto</a></li>
-                </ul>
-            </div>
-            <i class="bi bi-three-dots-vertical" onclick="showMenu()"></i>
+    <!-- header section starts -->
+
+    <header class="header">
+
+        <a href="index.html" class="logo">Dintex By Heim</a>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./pages/productos.html">Productos</a></li>
+                <li><a href="#">Servicios +</a>
+                    <ul>
+                        <li><a href="./pages/maritima.html">Maritima</a></li>
+                        <li><a href="./pages/aereo.html">Aereo</a></li>
+                    </ul>
+                </li>
+                <li><a href="./pages/nosotros.html">Nosotros</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
         </nav>
 
-        <div class="text-box">
-            <h1>Textil dintex</h1>
-            <h2>by heim</h2>
-            <p>Fundada en el año 2017, Pancom SRL es una empresa dedicada a la importación de artículos de primera calidad al mercado latinoamericano.
-                Líderes en importación textil, con años de experiencia en el rubro.</p>
-            <a href="./pages/productos.html" class="hero-btn">Explorar</a>
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
         </div>
-    </section>
+    </header>
 
-    <!-- Articulos -->
+    <!-- header section ends -->
 
-    <section class="productos">
-        <h1>Productos que importamos</h1>
-        <p>Importaciones y Exportaciones</p>
+    <!-- home section starts -->
 
-        <div class="row">
-            <div class="option-art">
-                <h3>Telas</h3>
-                <img src="./Assets/Img/textil.jpg" alt="">
-                <p>Punto - Plano</p>
-            </div>
-            <div class="option-art">
-                <h3>Hilados</h3>
-                <img src="./Assets/Img/hilado.jpg" alt="">
-                <p>Bremer - Lycra - Y Mas</p>
-            </div>
-            <div class="option-art">
-                <h3>Accesorios</h3>
-                <img src="./Assets/Img/accesorios.png" alt="">
-                <p>Bijouterie - Cierres - Botones - Etc</p>
+    <section class="home">
+
+        <div class="slide active" style="background: url(./assets/img/shipair.jpg) no-repeat;">
+            <div class="content">
+                <span>Dintex By Heim</span>
+                <h3>Empresa de importacion</h3>
             </div>
         </div>
-    </section>
 
-
-    <!-- Servicios -->
-
-    <section class="servicios">
-        <h1>Nuestros Servicios</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, facilis.</p>
-
-        <div class="row">
-            <div class="option-serv">
-                <img src="./Assets/Img/maritima.jpg">
-                <div class="layer">
-                    <h3>MARITIMA 20HQ/40HQ y CBM</h3>
-                </div>
+        <div class="slide" style="background: url(./assets/img/textil.jpg) no-repeat;">
+            <div class="content">
+                <span>Dintex By Heim</span>
+                <h3>Venta en stock</h3>
+                <a href="./pages/productos.html" class="btn">EXPLORAR</a>
             </div>
-            <div class="option-serv">
-                <img src="./Assets/Img/airship.jpg">
-                <div class="layer">
-                    <h3>AEREO CBM y KG</h3>
-                </div>
-            </div>
-
         </div>
+
+        <div class="slide" style="background: url(./assets/img/contactus.jpg) no-repeat;">
+            <div class="content">
+                <span>Dintex By Heim</span>
+                <h3>Comunicate con nosotros</h3>
+                <a href="./pages/contacto.html" class="btn">CONTACTO</a>
+            </div>
+        </div>
+
+        <div id="next-slide" onclick="next()" class="fas fa-angle-right"></div>
+        <div id="prev-slide" onclick="prev()" class="fas fa-angle-left"></div>
+
     </section>
 
-    <!--------------- Nosotros personas--------------->
+    <!-- home section ends -->
 
-    <section class="nosotros">
-        <h1>Quienes Somos</h1>
-        <p>Fundada en el año 2017, Pancom SRL es una empresa dedicada a la importación de artículos de primera calidad al mercado latinoamericano.
-            Líderes en importación textil, con años de experiencia en el rubro.</p>
+    <!-- banner section starts -->
 
-        <div class="row">
-            <div class="equipo">
-                <img src="./Assets/Img/Logo.jpg">
-                <h3>Gerente de Venta</h3>
-                <p>Shin Belen</p>
+    <section class="banner">
+
+        <div class="box">
+            <img src="./assets/img/shipair.jpg" alt="">
+            <div class="content">
+                <span>Servicios</span>
+                <h3>Produccion y<br>Despacho</h3>
+                <a href="#" class="btn">EXPLORAR</a>
             </div>
-            <div class="equipo">
-                <img src="./Assets/Img/Logo.jpg">
-                <h3>Administración</h3>
-                <p>Cho Jaqueline Natalia</p>
+        </div>
+
+        <div class="box">
+            <img src="./assets/img/hilado.jpg" alt="">
+            <div class="content">
+                <span>Producto</span>
+                <h3>Telas, Hilado,<br>Accesorios</h3>
+                <a href="#" class="btn">EXPLORAR</a>
             </div>
-            <div class="equipo">
-                <img src="./Assets/Img/Logo.jpg">
-                <h3>Vendedor</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque ipsum vitae obcaecati asperiores
-                    accusantium debitis.</p>
+        </div>
+
+        <div class="box">
+            <img src="./assets/img/servicio.jpg" alt="">
+            <div class="content">
+                <span>Nosotros</span>
+                <h3>Nuestra Empresa</h3>
+                <a href="./pages/nosotros.html" class="btn">CONOCER</a>
             </div>
         </div>
     </section>
 
-    <!--------------- contacto --------------->
-
-    <section class="contacto">
-        <h1>CEO's</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, dolores.</p>
-
-        <div class="row">
-            <div class="contactos">
-                <img src="./Assets/Img/Logo.jpg">
-                <div>
-                    <h3>nombre apellido</h3>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                </div>
-            </div>
-            <div class="contactos">
-                <img src="./Assets/Img/Logo.jpg">
-                <div>
-                    <h3>nombre apellido</h3>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-
-    <!-- contact us -->
-
-    <section class="cta">
-        <h1>NO DUDES EN COMUNICARTE<BR>LUNES A VIERNES DE 09AM ~ 17PM</h1>
-        <a href="./pages/contacto.html" class="hero-btn">contact us</a>
-
-    </section>
+    <!-- banner section ends -->
 
 
 
 
-    <!---------------- Footer ---------------->
+    <!-- footer section stars -->
 
     <section class="footer">
-        <h4>About Us</h4>
-        <div id="copyright" align="center">&copy; 2022 - 2022 Sergio Byun</div>
-        <script>
-            (function () {
-                let cpr = document.getElementById("copyright");
-                cpr.innerHTML = "&copy; 2022 - " + new Date().getFullYear() + " Sergio Byun - All Rights Reserved.";
-            })();
-        </script>
-        <div class="icons">
-            <i class="bi bi-facebook"></i>
-            <i class="bi bi-instagram"></i>
-            <i class="bi bi-twitter"></i>
-        </div>
-        <p>Made By Sergio Byun</p>
+        <div class="box-container">
 
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="index.html"><i class="fas fa-angle-right"></i>Home</a>
+                <a href="./pages/productos.html"><i class="fas fa-angle-right"></i>Productos</a>
+                <a href="./pages/maritima.html"><i class="fas fa-angle-right"></i>Maritima</a>
+                <a href="./pages/aereo.html"><i class="fas fa-angle-right"></i>Aereo</a>
+                <a href="./pages/nosotros.html"><i class="fas fa-angle-right"></i>Sobre Nosotros</a>
+                <a href="./pages/contacto.html"><i class="fas fa-angle-right"></i>Contacto</a>
+            </div>
+
+
+            <div class="box">
+                <h3>Seguinos en</h3>
+                <a href="https://www.facebook.com/dintexheim"><i class="fab fa-facebook-f"></i>Facebook</a>
+                <a href="https://www.instagram.com/dintex_textil/"><i class="fab fa-instagram"></i>Instagram</a>
+                <a href="#"><i class="fab fa-twitter"></i>Twitter</a>
+            </div>
+
+            <div class="box">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.977979229538!2d-58.47765178374017!3d-34.629996766398186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc991f1f0a4f9%3A0x6ea95b4385c46b0a!2sCampana%20161%2C%20C1406%20AUA%2C%20Buenos%20Aires!5e0!3m2!1sko!2sar!4v1665588322321!5m2!1sko!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        <div class="credit"> created by <span>Sergio Byun</span> | all rights reserved</div>
     </section>
 
-
-
-
-
-
-
-    <!-- for Toggle Menu -->
-    <script>
-
-        var navLinks = document.getElementById("navLinks")
-
-        function showMenu() {
-            navLinks.style.right = "0";
-        }
-
-        function hideMenu() {
-            navLinks.style.right = "-200px";
-        }
-
-    </script>
-
+    <!-- footer section ends -->
 
 </body>
 
