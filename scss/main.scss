@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
-@import"base/resets";
 @import"utils/variables";
+
+@import"base/resets";
+
 @import"components/botones";
+
 
 @mixin grid($val) {
     display: grid;
@@ -166,6 +169,7 @@ section {
                 color: $black;
                 display: block;
                 font-size: 2rem;
+                font-weight: 600;
                 animation: faeIN .4s linear .2s backwards;
             }
 
@@ -417,7 +421,7 @@ section {
 
     .row{
         display: flex;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         gap: 2rem;
 
         form{
@@ -451,17 +455,6 @@ section {
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
