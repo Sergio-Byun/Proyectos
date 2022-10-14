@@ -273,35 +273,14 @@ section {
             height: 25rem;
             width: 100%;
 
-            .icons{
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                border-bottom: $border;
-                transform: translateY(-7rem);
-
-
-                a{
-                    height: 5rem;
-                    width: 5rem;
-                    line-height: 5rem;
-                    font-size: 2rem;
-                    color: $black;
-
-                    &:hover{
-                        background: $black;
-                        color: $white;
-                    }
-                }
-            }
-
             img{
                 height: 100%;
                 width: 100%;
                 object-fit: cover;
             }
         }
+
+
         .content{
             padding: 1.5rem 0;
 
