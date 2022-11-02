@@ -293,14 +293,12 @@ section {
                 color: $black;
             }
 
-            .price{
-                font-size: 2.2rem;
+            .comp{
+                font-size: 1.5rem;
                 color: $black;
 
                 span{
-                    font-size: 1.5rem;
-                    text-decoration: line-through;
-                    color: $light-color;
+                    font-size: 1rem;
                 }
             }
         }
